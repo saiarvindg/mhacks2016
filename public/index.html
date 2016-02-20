@@ -14,7 +14,7 @@
 <script>
 var fbRef = new Firebase("https://amber-torch-4745.firebaseio.com/");
 
-var usersRef = ref.child("users");
+var usersRef = fbRef.child("users");
 usersRef.set({
 "users":{
 "user1":{
