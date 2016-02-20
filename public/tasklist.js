@@ -4,9 +4,6 @@ var usersRef = fbRef.child("users");
 
 var listNum = 0;
 
-//clearing the db everytime - just temporary
-usersRef.remove();
-
 /*
 desired structure:
 
@@ -41,19 +38,8 @@ function addItem(item, phoneNum){
 
 function removeItem(item, phoneNum){
    usersRef.child(phoneNum).child("items").child(item).set(null);
-    //usersRef.child(phoneNum).child(item).set(null);
 }
 
 function removeAll(phoneNum){
     usersRef.child(phoneNum).remove();
 }
-//usersRef.push({
-//    firstname: "bob",
-//    lastname: "the builder",
-//    timeupdate: Firebase.ServerValue.TIMESTAMP
-//});
-//
-//usersRef.update({
-//    firstname: "rolly",
-//    lastname: "the steam roller"
-//});
