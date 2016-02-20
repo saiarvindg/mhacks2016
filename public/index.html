@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src ="https://cdn.firebase.com/js/client/2.4.1/firebase.js"><script>
+  </head>
+
+<body>
+  <h1>
+    Hello!
+  </h1>
+</body>
+
+</html>
+
+<script>
+var fbRef = new Firebase("https://amber-torch-4745.firebaseio.com/");
+
+var usersRef = fbRef.child("users");
+usersRef.set({
+"users":{
+"user1":{
+"name":"User One",
+"list":{"one":pillow, "two":phone, "three":ipod},
+}
+}
+});
+
+
+
+
+</script>
