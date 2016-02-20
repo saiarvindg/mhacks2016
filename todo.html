@@ -9,7 +9,127 @@
     <title>myCart</title>
 
     <!-- Bootstrap -->
-    <link href="stylesheet.css" rel="stylesheet">
+
+    <!-- Custom Stylesheet Ends -->
+
+    <style>
+
+    @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+    /* Form List Styling */
+
+      html,
+      body {
+        background: linear-gradient(270deg, #D9A68C, #D9D68C);
+        margin: 0 0;
+        padding: 0 0;
+        font-family: 'Source Sans Pro', sans-serif;
+        cursor: default;
+      }
+
+      .container {
+        margin: 110px auto;
+        width: 500px;
+        text-align: center;
+      }
+
+      h2 {
+        background: #B43C52;
+        padding: 20px 20px;
+        color: #FFF;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        text-align: left;
+        margin: 0 0;
+      }
+
+      input[type="text"] {
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #FFF;
+        font-size: 20px;
+        width: 350px;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #FFF;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 20px;
+      }
+
+      .list {
+        background: #34495E;
+        width: 500px;
+        height: 500px;
+        border-radius: 5px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+
+      ul {
+        margin: 0 -40px;
+      }
+
+      li {
+        list-style: none;
+        text-align: left;
+        padding: 30px;
+        width: 460px;
+        transition: all .3s ease;
+        color: #FFF;
+        font-size: 16px;
+      }
+
+      li:hover {
+        background: #2C3E50;
+      }
+
+      .check {
+        border: 1px solid #FFF;
+        border-radius: 5px;
+        width: 15px;
+        height: 15px;
+        margin: 0 20px;
+        float: right;
+        transition: all .3s ease;
+        cursor: default;
+        padding: 3px;
+      }
+
+      .remove {
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        width: 15px;
+        height: 15px;
+        float: right;
+        margin: 0 0;
+        background-position: center;
+        background-size: 10px;
+        transition: all .3s ease;
+        cursor: default;
+        padding: 4px;
+      }
+
+      .remove:hover {
+        background: #B43C52;
+        padding: 4px;
+        cursor: default;
+      }
+
+      .selected {
+        background: url(../../assets/images/check.png) #B43C52;
+        background-repeat: no-repeat;
+
+/* Form Styling Ends */
+
+    </style>
+
+    <!-- Custom Stylesheet -->
+    <script>
+
+    </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,12 +141,64 @@
 
   <body>
 
-      <header id="header">
+     <header id="header">
         <div class="content">
-          <h1><a href="#">myCart</a></h1>
+          <h1><a href="index.html">myCart</a></h1> 
 
         <!--To-Do List-->
-            
+
+        <div class="container">
+
+          <div class="list">
+
+            <ul>
+
+              <li>Pick up kids<span class="check selected"></span>
+                <?xml version="1.0" ?>
+                <svg height="auto" class="remove" version="1.1" viewBox="0 0 19 23" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title/>
+                  <defs>
+                    <path d="M0.501203573,1.96015511 C0.501203573,1.96015511 7.17230047e-07,1.96015511 0,2.96015511 C-4.1525821e-07,3.96015511 0.501203573,3.96015511 0.501203573,3.96015511 L18.4987964,3.96015511 C18.4987964,3.96015511 19,3.96015511 19,2.96015511 C18.9999995,1.96015511 18.4987964,1.96015511 18.4987964,1.96015511 L0.501203573,1.96015511 L0.501203573,1.96015511 Z M0.973754885,4.96015511 L1.97273588,4.96015511 L3.97375489,21.9601551 L14.9737549,21.9601551 L16.9737549,4.96015511 L17.9737549,4.96015511 L15.9737549,22.9601551 L2.97375489,22.9601551 L0.973754885,4.96015511 Z M7.9737549,0.960155108 C6.9737549,0.960155108 6.9737549,1.96015511 6.9737549,1.96015511 L11.9737549,1.96015511 C11.9737549,1.96015511 11.9737549,0.960155108 10.9737549,0.960155108 L7.9737549,0.960155108 L7.9737549,0.960155108 Z M5.9737549,20.9601551 L6.9737549,20.9601551 L5.9737549,4.92304573 L4.97375489,4.92304573 L5.9737549,20.9601551 Z M12.9737549,4.92304573 L11.9737549,20.9601551 L12.9737549,20.9601551 L13.9737549,4.92304573 L12.9737549,4.92304573 L12.9737549,4.92304573 Z M8.9737549,4.92304573 L8.9737549,20.9601551 L9.9737549,20.9601551 L9.9737549,4.92304573 L8.9737549,4.92304573 L8.9737549,4.92304573 Z"
+                    id="path-1" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" id="miu" stroke="none" stroke-width="1">
+                    <g id="editor_trash_delete_recycle_bin_outline_stroke">
+                      <use fill="#FFF" fill-rule="evenodd" xlink:href="#path-1" />
+                      <use fill="none" xlink:href="#path-1" />
+                    </g>
+                  </g>
+                </svg>
+              </li>
+
+              <li>Take Dre to rugby<span class="check"></span>
+                <?xml version="1.0" ?>
+                <svg height="auto" class="remove" version="1.1" viewBox="0 0 19 23" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title/>
+                  <defs>
+                    <path d="M0.501203573,1.96015511 C0.501203573,1.96015511 7.17230047e-07,1.96015511 0,2.96015511 C-4.1525821e-07,3.96015511 0.501203573,3.96015511 0.501203573,3.96015511 L18.4987964,3.96015511 C18.4987964,3.96015511 19,3.96015511 19,2.96015511 C18.9999995,1.96015511 18.4987964,1.96015511 18.4987964,1.96015511 L0.501203573,1.96015511 L0.501203573,1.96015511 Z M0.973754885,4.96015511 L1.97273588,4.96015511 L3.97375489,21.9601551 L14.9737549,21.9601551 L16.9737549,4.96015511 L17.9737549,4.96015511 L15.9737549,22.9601551 L2.97375489,22.9601551 L0.973754885,4.96015511 Z M7.9737549,0.960155108 C6.9737549,0.960155108 6.9737549,1.96015511 6.9737549,1.96015511 L11.9737549,1.96015511 C11.9737549,1.96015511 11.9737549,0.960155108 10.9737549,0.960155108 L7.9737549,0.960155108 L7.9737549,0.960155108 Z M5.9737549,20.9601551 L6.9737549,20.9601551 L5.9737549,4.92304573 L4.97375489,4.92304573 L5.9737549,20.9601551 Z M12.9737549,4.92304573 L11.9737549,20.9601551 L12.9737549,20.9601551 L13.9737549,4.92304573 L12.9737549,4.92304573 L12.9737549,4.92304573 Z M8.9737549,4.92304573 L8.9737549,20.9601551 L9.9737549,20.9601551 L9.9737549,4.92304573 L8.9737549,4.92304573 L8.9737549,4.92304573 Z"
+                    id="path-1" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" id="miu" stroke="none" stroke-width="1">
+                    <g id="editor_trash_delete_recycle_bin_outline_stroke">
+                      <use fill="#FFF" fill-rule="evenodd" xlink:href="#path-1" />
+                      <use fill="none" xlink:href="#path-1" />
+                    </g>
+                  </g>
+                </svg>
+              </li>
+
+              <li>Take Florence to ballet<span class="check"></span>
+                <?xml version="1.0" ?>
+                <svg height="auto" class="remove" version="1.1" viewBox="0 0 19 23" width="15px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title/>
+                  <defs>
+                    <path d="M0.501203573,1.96015511 C0.501203573,1.96015511 7.17230047e-07,1.96015511 0,2.96015511 C-4.1525821e-07,3.96015511 0.501203573,3.96015511 0.501203573,3.96015511 L18.4987964,3.96015511 C18.4987964,3.96015511 19,3.96015511 19,2.96015511 C18.9999995,1.96015511 18.4987964,1.96015511 18.4987964,1.96015511 L0.501203573,1.96015511 L0.501203573,1.96015511 Z M0.973754885,4.96015511 L1.97273588,4.96015511 L3.97375489,21.9601551 L14.9737549,21.9601551 L16.9737549,4.96015511 L17.9737549,4.96015511 L15.9737549,22.9601551 L2.97375489,22.9601551 L0.973754885,4.96015511 Z M7.9737549,0.960155108 C6.9737549,0.960155108 6.9737549,1.96015511 6.9737549,1.96015511 L11.9737549,1.96015511 C11.9737549,1.96015511 11.9737549,0.960155108 10.9737549,0.960155108 L7.9737549,0.960155108 L7.9737549,0.960155108 Z M5.9737549,20.9601551 L6.9737549,20.9601551 L5.9737549,4.92304573 L4.97375489,4.92304573 L5.9737549,20.9601551 Z M12.9737549,4.92304573 L11.9737549,20.9601551 L12.9737549,20.9601551 L13.9737549,4.92304573 L12.9737549,4.92304573 L12.9737549,4.92304573 Z M8.9737549,4.92304573 L8.9737549,20.9601551 L9.9737549,20.9601551 L9.9737549,4.92304573 L8.9737549,4.92304573 L8.9737549,4.92304573 Z"
+                    id="path-1" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" id="miu" stroke="none" stroke-width="1">
+                    <g id="editor_trash_delete_recycle_bin_outline_stroke">
+                      <use fill="#FFF" fill-rule="evenodd" xlink:href="#path-1" />
+                      <use fill="none" xlink:href="#path-1" />
 
         <!--To-Do List Ends-->
         </div>
