@@ -1,30 +1,38 @@
 <html>
   <head>
-    <script src ="https://cdn.firebase.com/js/client/2.4.1/firebase.js"><script>
+    <script src ="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
   </head>
 
 <body>
+    <script src="tasklist.js">
+    
+    
+        
+    //var fbRef.set("aValue");
+
+//    fbRef.set({
+//            type: "fruit",
+//            name: "apple",
+//            price: 42.0
+//    });
+    </script>
+    
   <h1>
     Hello!
+      <script>
+          console.log("logged");
+          addUser(123, "Bob", "The builder");
+          addUser(456, "Dora", "The explorer");
+          addUser(789, "Boots", "The monkey");
+          removeUser(456);
+          addItem("pillow",123);
+          addItem("shovel", 123);
+          addItem("banana", 789);
+          removeItem("shovel",123);
+      </script>
   </h1>
 </body>
-
 </html>
 
-<script>
-var fbRef = new Firebase("https://amber-torch-4745.firebaseio.com/");
-
-var usersRef = fbRef.child("users");
-usersRef.set({
-"users":{
-"user1":{
-"name":"User One",
-"list":{"one":pillow, "two":phone, "three":ipod},
-}
-}
-});
 
 
-
-
-</script>
