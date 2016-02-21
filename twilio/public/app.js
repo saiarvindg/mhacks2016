@@ -107,7 +107,7 @@ app.post('/message', function(req, res){
 
 function parse(msg){
     msg = capitalizeFirstLetter(msg.toLowerCase());
-    if(msg.indexOf("Adele") > -1){
+    if(msg.indexOf("Adele") > -1 || msg.indexOf("adele") > -1){
         sendMsg("What would you like translated? \n Type the foreign language you would like translated followed by a ':' and then your message \n Ex. English : arreter");
     }else if (msg.indexOf(":") > -1){
         var splittedMsg = msg.split(":");
