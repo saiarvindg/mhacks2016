@@ -9,15 +9,15 @@ const delimiter = ":";
 var Firebase = require("firebase");
 var myFirebaseRef = new Firebase("https://amber-torch-4745.firebaseio.com/");
 var twilio = require('twilio'),
-client = twilio('AC7dc7a5ef539bb482907e4777cd5a8ade','0f18f5ed3eea6d888aa2464273b70ae5');
+client = twilio('','');
 var request = require("request");
 var HashMap = require('hashmap');
 
-const API_KEY = "AIzaSyD1OMVnuoNbvezpnYLasx2HodKIaYzmfSE";
+const API_KEY = "";
 
 const TRANSLATE_URL = "https://www.googleapis.com/language/translate/v2?key=";
 
-var twilioNum = '+12402973246';
+var twilioNum = '';
 
 var phoneNum;
 
